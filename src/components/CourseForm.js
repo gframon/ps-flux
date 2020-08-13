@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TextInput from "./common/TextInput";
-import AuthorsList from "./AuthorsList"
+import AuthorsList from "./AuthorsList";
 
 function CourseForm(props) {
   return (
@@ -15,7 +15,7 @@ function CourseForm(props) {
         error={props.errors.title}
       />
 
-      <AuthorsList 
+      <AuthorsList
         id="authorId"
         label="Author"
         name="authorId"
@@ -40,7 +40,7 @@ CourseForm.propTypes = {
   course: PropTypes.object.isRequired,
   onSubmit: PropTypes.func.isRequired,
   onChange: PropTypes.func.isRequired,
-  errors: PropTypes.object.isRequired
+  errors: PropTypes.object.isRequired,
 };
 
 export default CourseForm;
